@@ -55,7 +55,7 @@ module.exports = class Bot {
         this._client.on("login", () => {
             this.isConnected = true;
 
-            console.info("Bot logado.");
+            console.info("Logged!");
             this.respawn();
         });
 
@@ -77,8 +77,8 @@ module.exports = class Bot {
 
         this._client.once("update_health", (packet) => {
             if (packet.health > 0) {
-                console.info("Estou vivo.");
-                this.chat("Pronto!");
+                console.info("I'm alive!");
+                this.chat("Ready!");
             }
         });
 
