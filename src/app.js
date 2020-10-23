@@ -5,7 +5,8 @@ console.log("Setting env variables...");
 require("dotenv").config();
 
 const bot = new Bot({
-    name: "IronBot",
+    name: process.env.BOT_NAME || "Bot",
+    password: process.env.BOT_PASS,
     host: process.env.SERVER_HOST,
 });
 
