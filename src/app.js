@@ -8,6 +8,7 @@ const bot = new Bot({
     name: process.env.BOT_NAME || "Bot",
     password: process.env.BOT_PASS,
     host: process.env.SERVER_HOST,
+    port: process.env.SERVER_PORT
 });
 
 bot.connect();
