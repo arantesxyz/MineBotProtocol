@@ -29,6 +29,7 @@ module.exports = class Bot {
             port: this.port,
             username: this.name,
             password: this.password,
+            auth: 'mojang',
         });
 
         this._registerEvents();
