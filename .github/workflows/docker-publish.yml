@@ -1,4 +1,4 @@
-name: Docker
+name: Docker build and publish
 
 on:
   workflow_dispatch:
