@@ -2,19 +2,13 @@ name: Docker build and publish
 
 on:
   workflow_dispatch:
-    inputs:
-      a:
-        description: Ignore this
-        required: false
-        default: "a"
 
 env:
   IMAGE_NAME: minebotprotocol
 
 jobs:
-  push:
+  build-and-push:
     runs-on: ubuntu-latest
-    if: github.event_name == 'push'
 
     permissions:
       contents: read
