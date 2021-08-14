@@ -1,8 +1,12 @@
 name: Docker build and publish
 
 on:
-  push:
-    branches: production
+  workflow_dispatch:
+    inputs:
+      a:
+        description: Ignore this
+        required: false
+        default: "a"
 
 env:
   IMAGE_NAME: minebotprotocol
