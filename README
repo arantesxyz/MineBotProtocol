@@ -2,6 +2,15 @@
 Simple Minecraft client bot. I normally use this for keeping my farms running AFK during the night.
 
 ### Usage
+
+With env file:
+```sh
+docker run -d --name minebot \
+--env-file /path/to/env \ # Replace with your env file. Check the example in .env.example \
+ghcr.io/arantesxyz/minebotprotocol/minebotprotocol:latest
+```
+
+With command line env variables:
 ```sh
 docker run -d --name minebot \
 -e BOT_NAME=John \ # Put your email instead for online-mode=true
