@@ -1,8 +1,8 @@
 name: Docker build and publish
 
 on:
-  workflow_run:
-    branches: main
+  push:
+    branches: production
 
 env:
   IMAGE_NAME: minebotprotocol
