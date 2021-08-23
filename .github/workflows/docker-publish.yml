@@ -4,8 +4,8 @@ on:
   workflow_dispatch:
 
 env:
-  REGISTRY: docker.pkg.github.com
-  IMAGE_NAME: minebot
+  REGISTRY: ghcr.io
+  IMAGE_NAME: minebotprotocol
 
 jobs:
   build-and-push:
@@ -38,4 +38,4 @@ jobs:
           context: .
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: ${{ env.REGISTRY }}/minebotprotocol/${{ env.IMAGE_NAME }}:latest
+          tags: ${{ env.REGISTRY }}/arantesxyz/${{ env.IMAGE_NAME }}:latest
