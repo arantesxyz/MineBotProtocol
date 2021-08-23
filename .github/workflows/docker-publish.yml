@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
 env:
-  REGISTRY: ghcr.io
+  REGISTRY: docker.pkg.github.com
   IMAGE_NAME: minebot
 
 jobs:
