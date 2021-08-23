@@ -5,7 +5,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: minebotprotocol
+  IMAGE_NAME: minebot
 
 jobs:
   build-and-push:
@@ -38,4 +38,4 @@ jobs:
           context: .
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: ${{ env.REGISTRY }}/${{ github.repository }}/${{ env.IMAGE_NAME }}:latest
+          tags: ${{ env.REGISTRY }}/minebotprotocol/${{ env.IMAGE_NAME }}:latest
