@@ -37,4 +37,4 @@ jobs:
           context: .
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: arantesxyz/${{ env.IMAGE_NAME }}:latest
+          tags: docker.pkg.github.com/${{ github.repository }}/${{ env.IMAGE_NAME }}:latest
